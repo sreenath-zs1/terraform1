@@ -3,8 +3,8 @@ terraform {
     bucket = "my-tf-test-bucket-sree-s123"
     region = "us-east-1"
     key    = "VPC/terraform.tfstate"
-    access_key = var.AWS_ACCESS_KEY_ID
-    secret_key = var.AWS_SECRET_KEY_ID
+    access_key = "AKIAT57BV3QSFDR5XZ5U"
+    secret_key = "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"
   }
 
   required_providers {
@@ -20,8 +20,8 @@ terraform {
 provider "aws" {
   profile = "default"
   region  = "us-east-1"
-  access_key = var.AWS_ACCESS_KEY_ID
-  secret_key = var.AWS_SECRET_KEY_ID
+  access_key = "AKIAT57BV3QSFDR5XZ5U"
+  secret_key = "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"
 }
 
 ########
