@@ -10,17 +10,7 @@ variable "name" {
   default     = "My VPC1-sree"
 }
 
-variable "AWS_ACCESS_KEY_ID" {
-  description = "AWS ACCESS KEY ID FOR S3-EC2-ADMIN FULL ACCESS"
-  type        = string
-  default     = "AKIAT57BV3QSFDR5XZ5U"
-}
 
-variable "AWS_SECRET_KEY_ID" {
-  description = "AWS SECRET ID FOR S3-EC2-ADMIN FULL ACCESS"
-  type        = string
-  default     = "A3qYKtAMFggt4lwDxDLTFb84mDXDhw+MNTyNIpNT"
-}
 variable "vpc_public_subnet_1" {
   description = "The CIDR block for the Public subnet 1"
   type        = string

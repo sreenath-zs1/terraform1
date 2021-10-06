@@ -3,8 +3,7 @@ terraform {
     bucket = "my-tf-test-bucket-sree-s123"
     region = "us-east-1"
     key    = "VPC/terraform.tfstate"
-    access_key = "AKIAT57BV3QSFDR5XZ5U"
-    secret_key = "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"
+    shared_credentials_file = "C:/Users/Sreenath/.aws/credentials"
   }
 
   required_providers {
@@ -20,8 +19,7 @@ terraform {
 provider "aws" {
   profile = "default"
   region  = "us-east-1"
-  access_key = "AKIAT57BV3QSFDR5XZ5U"
-  secret_key = "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"
+  shared_credentials_file = "C:/Users/Sreenath/.aws/credentials"
 }
 
 ########
