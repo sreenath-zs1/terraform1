@@ -1,3 +1,4 @@
+terraform {
 backend "s3" {
     bucket = "my-tf-test-bucket-sree-s123"
     region = "us-east-1"
@@ -11,12 +12,13 @@ backend "s3" {
       version = "~> 3.27"
     }
   }
+}
 
 
 provider "aws" {
   profile = "default"
   region  = "us-east-1"
-#   shared_credentials_file = "C:/Users/Sreenath/.aws/credentials"
+  shared_credentials_file = "C:/Users/Sreenath/.aws/credentials"
 }
 
 
