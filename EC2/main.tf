@@ -19,7 +19,7 @@ terraform {
 provider "aws" {
   profile = "default"
   region  = var.aws_region
-  #shared_credentials_file = "C:/Users/Sreenath/.aws/credentials"
+  shared_credentials_file = "C:/Users/Sreenath/.aws/credentials"
 }
 
 resource "aws_instance" "ec2" {
