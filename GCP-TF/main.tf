@@ -8,11 +8,12 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("C:/Users/Sreenath/Downloads/terraform-328213-e4bd745d8e1a.json")
+ # credentials = file("C:/Users/Sreenath/Downloads/terraform-328213-e4bd745d8e1a.json")
+  credentials = file(var.credentials_file)
 
-  project = "terraform-328213"
-  region  = "us-central1"
-  zone    = "us-central1-c"
+  project = var.project
+  region  = var.region
+  zone    = var.zone
 }
 
 resource "google_compute_network" "vpc_network" {
@@ -26,7 +27,8 @@ resource "google_compute_instance" "vm_instance" {
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-9"
+      #image = "debian-cloud/debian-9"
+      image = "cos-cloud/cos-stable"
     }
   }
 
